@@ -1,1 +1,1 @@
-web: gunicorn d15-movie-lovers-blog.wsgi
+web: gunicorn D15MovieLoversBlog.wsgi
