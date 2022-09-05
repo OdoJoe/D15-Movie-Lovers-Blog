@@ -1,0 +1,1 @@
+web: gunicorn d15-movie-lovers-blog.wsgi
