@@ -52,3 +52,33 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"comment {self.body} by {self.name}"
+
+
+class Poll(models.Model):
+    """
+    Poll for users to select next months Director focus
+    """
+    date_active = models.DateTimeField()
+    date_expire = models.DateTimeField()
+    date_created = models.DateTimeField(auto_now_add=True)
+    body = models.TextField()
+
+    class Meta:
+        ordering = ['-date_created']
+
+    def __str__(self):
+        return self.body
+
+class PollOption(models.Model):
+    """
+    Poll option to include image for user selection
+    """
+    poll_option_image = CloudinaryField('image', default='placeholder')
+    poll_option_text = models.TextField()
+    display_order = models.IntegerField()
+
+    class Meta:
+        ordering = ['display_order']
+
+    def __str__(self):
+        return self.poll_option_text

@@ -6,4 +6,4 @@ from .models import Post
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
-    summernote_fields = ('content')
+    summernote_fields = ('post_content')
