@@ -1,8 +1,9 @@
 from django.db import models
-from django.contrib.auth.models import user
+from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "DRAFT"), (1, "Published"))
+
 
 class Post(models.Model):
     """
@@ -19,14 +20,20 @@ class Post(models.Model):
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
     class Meta:
-        ordering = ['-created_on']
+        """
+        class to organise posts
+        to the post date (descending order)
+        """
+        ordering = ['-post_create_date']
 
     def __str__(self):
         return self.title
 
     def number_of_likes(self):
+        """
+        Returns post like count
+        """
         return self.likes.count()
-
 
 
 class Comment(models.Model):
@@ -45,6 +52,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"comment {self.body} by {self.name}"
-
-
-
