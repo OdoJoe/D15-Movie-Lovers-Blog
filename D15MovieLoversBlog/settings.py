@@ -76,6 +76,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'D15MovieLoversBlog.wsgi.application'
 
 
