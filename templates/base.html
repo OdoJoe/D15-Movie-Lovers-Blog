@@ -38,14 +38,14 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <span class="blog-nav"><a href="#">Logout</a></span>
+                        <span class="blog-nav"><a href="{% url 'account_logout' %}">Logout</a></span>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <span class="blog-nav"><a href="#">Login</a></span>
+                        <span class="blog-nav"><a href="{% url 'account_login' %}">Login</a></span>
                     </li>
                     <li class="nav-item">
-                        <span class="blog-nav"><a href="#">Register</a></span>
+                        <span class="blog-nav"><a href="{% url 'account_signup' %}">Register</a></span>
                     </li>
                     {% endif %}
                     <li class="nav-item">
