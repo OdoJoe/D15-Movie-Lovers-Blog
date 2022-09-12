@@ -23,12 +23,12 @@
                                     <p class="author">Author: {{ post.author }}</p>
                                 </div>
                             </div>
-                            <a href="#" class="blog-post-link">
+                            <a href="{% url 'post_detail' post.slug  %}" class="blog-post-link">
                                 <h2 class="blog-post-title">{{ post.title }}</h2>
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.post_create_date}} <i class="far fa-heart"></i>
-                                {{ post.likes }}</p>
+                                {{ post.number_of_likes }}</p>
                         </div>
                     </div>
                 </div>
