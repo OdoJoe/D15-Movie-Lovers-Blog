@@ -194,3 +194,13 @@ body {
 .blog-account-text {
     color: aquamarine;
 }
+
+.blog-comment-text {
+    font-family: sans-serif;
+    font-size: 100%;
+    color: rgb(18, 42, 34);
+}
+
+.blog-comment-text-color {
+    color: rgb(18, 42, 34);
+}
