@@ -86,3 +86,4 @@ class PollOption(models.Model):
 
     def __str__(self):
         return self.poll_option_text
+
