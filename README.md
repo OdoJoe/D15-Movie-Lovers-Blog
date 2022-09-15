@@ -1,108 +1,50 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# D15 Movie Lovers Club
 
-Welcome Joe O'Donohoe,
+## Placeholder for responsive design example on differing screen types
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Strategy
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## <u>Agile</u>
+* The Agile framework was applied to this project using Github views and issues tab. I created a template and applied the template to each user story.
+* I collected the user stories by interviewing a family member as a mock user.
+* I assembled the user stories onto a kanban board in Github under the headings 'To Do', 'In Progress' and 'Done'. Using each column effectively kept the project moving toward completion. Breaking the work up into iterations helped to reduce the enormity of the project to manageable work sessions.
+* Not all user stories were effectively completed and have been retained as a baseline for improvemnt and adding features in the future.
 
-## Gitpod Reminders
+## <u>Project Goal</u>
+* The idea behind the D15 Movie Lovers Blog was to create a blog that can easily fit in with my previous portfolio projects: PP1 The D15 Movie Lovers Club and PP2 The D15 Movie Lovers Quiz
+* I kept the styling, colours and overall look in line with my PP1 and PP2 with a long term goal of merging the three projects together to create a viable club website with member(user) interactivity and contributions with a focus on responsive and simple design
+* I wanted Users to register, log in and log out in a simple manner while being able to write a Blog, comment on a blog and edit and delete their own comments.
+* Adding a blog to the D15 movile Lovers Club is a powerful way to maintain engagement with the club and foster unity with the club members, club officials and the club presence online
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## <u>User Stories</u>
+1. As an admin of the D15 Movie Lovers Club Blog I can approve or disapprove comments giving the admin the ability to disapprove questionable content
 
-`python3 -m http.server`
+2. As a member of the D15 Movie Lovers Club and Blog I can access the blog on all my devices from Phone to Desktop
 
-A blue button should appear to click: _Make Public_,
+3. As a member of the D15 Movie Lovers Club and Blog I can recognise that the Blog page is linked to the main D15 Movie Lovers page by colour and style
 
-Another blue button should appear to click: _Open Browser_.
+4. As a member of the D15 Movie Lovers Club and Blog I can easily find and read the blog posts
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+5. As a member of the D15 Movie Lovers Club and Blog I can log onto the Blog with minimal fuss
 
-A blue button should appear to click: _Make Public_,
+6. As a member of the D15 Movie Lovers Club I can register to join the blog in a simple and accessible log on page
 
-Another blue button should appear to click: _Open Browser_.
+7. As a member of the D15 Movie Lovers Club and Blog I can vote on the monthly directors best film on a simple and accessible voting/survey box
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+8. As a member of the D15 Movie Lovers Club and Blog I can add suggestions to a suggestion submission box for the next monthly Director focus
 
-To log into the Heroku toolbelt CLI:
+9. As a member of the D15 Movie Lovers Club and Blog I can delete my comments made to Blog Posts
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+10. As a member of the D15 Movie Lovers Club and Blog I can edit my comments on Blog Posts
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+11. As a member of the D15 Movie Lovers Club and Blog I can comment on a Blog Post
 
-------
+## <u>Scope and structure</u>
+The project scope was reduced and simplified as I approached my deadline. I decided to concentrate on coding the blog in a simple fashion with full CRUD functionality intact. 
 
-## Release History
+The user stories relating to 'voting on Monthly Directors best film' and 'submitting suggestions for the next monthly director focus', while not implemented at this stage of development due to timing constraints will be added to the blog at a later date
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The blog is designed to represent the blog if it were clicked into from the main D15 Movie Lovers Club (my PP1) as another page to that projects nav bar. Once the user clicks in they are presented with up to 4 Blogs per page, which will paginate into a second page once more than 4 blogs have been written. Users can navigate to 'Home', 'Register', 'Login' and 'About'
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## <u>Features</u>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
