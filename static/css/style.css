@@ -9,26 +9,6 @@ body {
     color: #4A4A4F;
 }
 
-/*.red-o {
-    color: #E84610;
-}
-*/
-/*.thin {
-    font-weight: 300;
-}
-*/
-/*.light-bg {
-    background-color: #fff;
-}
-*/
-/*.dark-bg {
-    background-color: #445261;
-}
-*/
-/*.main-bg {
-    background-color: #F9FAFC;
-}
-*/
 .card {
     color: white;
     border: none;
@@ -128,6 +108,10 @@ body {
     text-decoration: underline;
 }
 
+.link-active {
+    color: #445261;
+    text-decoration: underline;
+}
 .btn-like {
     color: #E84610;
     border: none;

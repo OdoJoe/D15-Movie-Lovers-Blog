@@ -1,4 +1,4 @@
-# D15 Movie Lovers Club
+# D15 Movie Lovers Club Blog
 
 ## Placeholder for responsive design example on differing screen types
 

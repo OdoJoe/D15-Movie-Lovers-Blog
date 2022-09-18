@@ -51,39 +51,25 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
+        """
+        class to organise comments
+        to the comment date (ascending order)
+        """
         ordering = ['created_on']
 
     def __str__(self):
         return f"comment {self.body} by {self.name}"
 
 
-class Poll(models.Model):
+class CommentValidator():
     """
-    Poll for users to select next months Director focus
+    class to validate number of
+    characters in each comment
     """
-    date_active = models.DateTimeField()
-    date_expire = models.DateTimeField()
-    date_created = models.DateTimeField(auto_now_add=True)
-    body = models.TextField()
+    def validate(self, text):
 
-    class Meta:
-        ordering = ['-date_created']
-
-    def __str__(self):
-        return self.body
-
-
-class PollOption(models.Model):
-    """
-    Poll option to include image for user selection
-    """
-    poll_option_image = CloudinaryField('image', default='placeholder')
-    poll_option_text = models.TextField()
-    display_order = models.IntegerField()
-
-    class Meta:
-        ordering = ['display_order']
-
-    def __str__(self):
-        return self.poll_option_text
+        if len(text) > 1000:
+            return 'Your comment is too long.'
+        else: 
+            return ''
 
