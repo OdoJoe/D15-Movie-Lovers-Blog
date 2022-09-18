@@ -1,108 +1,129 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# D15 Movie Lovers Club
 
-Welcome Joe O'Donohoe,
+## Placeholder for responsive design example on differing screen types
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Strategy
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## <u>Agile</u>
+* The Agile framework was applied to this project using Github views and issues tab. I created a template and applied the template to each user story.
+* I collected the user stories by interviewing a family member as a mock user.
+* I assembled the user stories onto a kanban board in Github under the headings 'To Do', 'In Progress' and 'Done'. Using each column effectively kept the project moving toward completion. Breaking the work up into iterations helped to reduce the enormity of the project to manageable work sessions.
+* Not all user stories were effectively completed and have been retained as a baseline for improvemnt and adding features in the future.
 
-## Gitpod Reminders
+## <u>Project Goal</u>
+* The idea behind the D15 Movie Lovers Blog was to create a blog that can easily fit in with my previous portfolio projects: PP1 The D15 Movie Lovers Club and PP2 The D15 Movie Lovers Quiz
+* I kept the styling, colours and overall look in line with my PP1 and PP2 with a long term goal of merging the three projects together to create a viable club website with member(user) interactivity and contributions with a focus on responsive and simple design
+* I wanted Users to register, log in and log out in a simple manner while being able to write a Blog, comment on a blog and edit and delete their own comments.
+* Adding a blog to the D15 movile Lovers Club is a powerful way to maintain engagement with the club and foster unity with the club members, club officials and the club presence online
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## <u>User Stories</u>
+1. As an admin of the D15 Movie Lovers Club Blog I can approve or disapprove comments giving the admin the ability to disapprove questionable content
 
-`python3 -m http.server`
+2. As a member of the D15 Movie Lovers Club and Blog I can access the blog on all my devices from Phone to Desktop
 
-A blue button should appear to click: _Make Public_,
+3. As a member of the D15 Movie Lovers Club and Blog I can recognise that the Blog page is linked to the main D15 Movie Lovers page by colour and style
 
-Another blue button should appear to click: _Open Browser_.
+4. As a member of the D15 Movie Lovers Club and Blog I can easily find and read the blog posts
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+5. As a member of the D15 Movie Lovers Club and Blog I can log onto the Blog with minimal fuss
 
-A blue button should appear to click: _Make Public_,
+6. As a member of the D15 Movie Lovers Club I can register to join the blog in a simple and accessible log on page
 
-Another blue button should appear to click: _Open Browser_.
+7. As a member of the D15 Movie Lovers Club and Blog I can vote on the monthly directors best film on a simple and accessible voting/survey box
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+8. As a member of the D15 Movie Lovers Club and Blog I can add suggestions to a suggestion submission box for the next monthly Director focus
 
-To log into the Heroku toolbelt CLI:
+9. As a member of the D15 Movie Lovers Club and Blog I can delete my comments made to Blog Posts
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+10. As a member of the D15 Movie Lovers Club and Blog I can edit my comments on Blog Posts
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+11. As a member of the D15 Movie Lovers Club and Blog I can comment on a Blog Post
 
-------
+## <u>Scope and structure</u>
+The project scope was reduced and simplified as I approached my deadline. I decided to concentrate on coding the blog in a simple fashion with full CRUD functionality intact. 
 
-## Release History
+The user stories relating to 'voting on Monthly Directors best film' and 'submitting suggestions for the next monthly director focus', while not implemented at this stage of development due to timing constraints will be added to the blog at a later date
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The blog is designed to represent the blog if it were clicked into from the main D15 Movie Lovers Club (my PP1) as another page to that projects nav bar. Once the user clicks in they are presented with up to 4 Blogs per page, which will paginate into a second page once more than 4 blogs have been written. Users can navigate to 'Home', 'Register', 'Login' and 'About'
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## <u>Features</u>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Each navigational button on the Nav Bar highlights when hovered on
+- PLACEHOLDER FOR SCREENSHOTS
+* The selected page will maintain the highlighted bar to inform the user
+- PLACEHOLDER FOR SCREENSHOTS
+* Navbar reduces to burger button to accomadate smaller screen sizes
+- PLACEHOLDER FOR SCREENSHOTS
+* Footer in place with links to social media
+- PLACEHOLDER FOR SCREENSHOTS
+* A total of 4 Blog Posts will be shown before pagination moves further Blog Posts to a new page
+- PLACEHOLDER FOR SCREENSHOTS
+* User is notified that their comment is submitted for authorisation
+- PLACEHOLDER FOR SCREENSHOTS
+* Once the comment has been submitted the User also has the option to edit the comment or delete the comment
+- PLACEHOLDER FOR SCREENSHOTS
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## <u>Blog Posts</u>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* The blog Posts are viewable from the main page and paginated to a new page once the number of posts hits 4 plus. The user can then click into the blog post to extend the post and read its contents. Each post is accompanied buy an appropriate picture hosted in Cloudinary.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Users will have to register using a Username, email and password to leave, edit and delete a comment. The registration process is simple and user friendly incorporating Django AllAuth.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Five total posts have been made to the Blog to present the pagination
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* The space to the right of the Blog posts was intended for the user Polling/vote interactivity. I plan to write a simple polling/vote box containing the options for Next Months Director focus and the list of films for each director giving users the ability to vote on their faourite from that director.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## <u>Future Features</u>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* As previously noted the original scope of the project included a Polling option to allow users to poll/vote on next months director focus and to vote on the current directors best film. This option will bring more interactivity to the user base increasing engagement and fostering an atmosphere of unity among the club members. I planned to write two simple poll option boxes to the right of the Blog posts on the Home Page. The top box would contain a list of 4 potential directors to vote on for the upcoming director focus in which users will click the directors name and the count for that director would increase by that vote. The second box, placed underneath the first, will contain a list of the current directors movies allowng users to vote on their favourite film and that count would increase by one. At the end of each month a follow up blog would be created to discuss the polling/vote results and hopefully garner engagement among the members in the comments.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* The eventual goal for this project is to merge it with my portfolio project 1 and portfolio project 2 and create a viable club site with interactivity to promote engagement through the D15 MOvile Lovers Quiz(PP2) and through the Blog posts, comments and polling from this project.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* I also plan to develop a club logo and replace the rudimentary D15 Movie Lovers heading on each of the PP1, PP2 and PP4 projects.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* Future ambitions include adding a link to a physical media store in which users can purchase Blu Ray, DVD or 4k UHD blu Rays of their favourite movies, discounted using the club profile. ALso an option to add soundtracks, T-Shirts and other collectible, movie focused memorabilia
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## <u>Wireframes</u>
 
-## FAQ about the uptime script
+- PLACEHOLDER FOR SCREENSHOTS
 
-**Why have you added this script?**
+## <u>Data Models</u>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- PLACEHOLDER FOR SCREENSHOTS
 
-**How will this affect me?**
+## <u>Design</u>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* The design focused on maintaining the look and feel of the previous D15 Movie Lover projects (PP1 and PP2) using the same header, footer and body colours. The colour scheme, as per the previous D15 Movie Lovers projects is used to generate an emotional response to the typical muted colours associated with visiting the cinema or those nostalgic trips to the video store, walking the aisles to find your next rental, etc. The overall design is very simple to keep the screen minimalist and decluttered.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* A default image related to cinema was used as a fallback
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* Sans-serif was used to keep the font simple and elegant
 
-**So….?**
+* I note the overall design may be considered too simple when compared to more contempory blog/club sites. My goal is to improve the design by incorporating a new club logo and refreshing the overall style.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+## <u>Technologies Used</u>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* HTML5
+* CSS
+* Bootstrap
+* Python
+* Django
+* Allauth - within Django framework
+* Crispy Forms - within Django framework
+* gunicorn - within Django framework
+* Summernotes - within Django framework
+* Cloudinary
+* Heroku postgres
+* Gitpod
+* Github
+* fontawesome
+* Balsamiq - Wireframes
+* W3C Validation
+* W3C CSS Validation
+* PEP8 validation
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## <u>Credits</u>
+* I heavily relied on the course content walkthrough project for the Code Star blog presented by Matt Rudge. The entire project was built using the guidance of Matts course content in particular the bootsrap application to make the site responsive. My sincere thanks to Matt and his content as without it I dont think I would've completed this project.
