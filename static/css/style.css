@@ -188,3 +188,27 @@ body {
 .blog-comment-text-color {
     color: rgb(18, 42, 34);
 }
+
+#about_text {
+    color: aquamarine;
+}
+
+.edit-comment-text {
+    color: #23BBBB;
+}
+
+.comment-header-text {
+    color: rgb(18, 42, 34);
+}
+
+.delete-comment-text {
+    color: #23BBBB;
+}
+
+.delete-confirmation-text {
+    color: aquamarine;
+}
+
+.no-decoration a {
+    color: aquamarine;
+}

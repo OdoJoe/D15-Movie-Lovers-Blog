@@ -1,3 +1,4 @@
+from django.shortcuts import reverse
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
@@ -48,7 +49,7 @@ class Comment(models.Model):
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=True)
 
     class Meta:
         """
@@ -60,6 +61,9 @@ class Comment(models.Model):
     def __str__(self):
         return f"comment {self.body} by {self.name}"
 
+    def get_absolute_url(self):
+        return reverse('home')
+
 
 class CommentValidator():
     """
@@ -70,6 +74,6 @@ class CommentValidator():
 
         if len(text) > 1000:
             return 'Your comment is too long.'
-        else: 
+        else:
             return ''
 

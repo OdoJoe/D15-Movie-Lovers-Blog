@@ -84,6 +84,8 @@ The blog is designed to represent the blog if it were clicked into from the main
 
 * Future ambitions include adding a link to a physical media store in which users can purchase Blu Ray, DVD or 4k UHD blu Rays of their favourite movies, discounted using the club profile. ALso an option to add soundtracks, T-Shirts and other collectible, movie focused memorabilia
 
+* I plan to have the comment edits return the user to the original comment instead of back to the home page
+
 
 ## <u>Wireframes</u>
 
@@ -103,6 +105,9 @@ The blog is designed to represent the blog if it were clicked into from the main
 
 * I note the overall design may be considered too simple when compared to more contempory blog/club sites. My goal is to improve the design by incorporating a new club logo and refreshing the overall style.
 
+## <u>Known Bugs</u>
+
+* The create comment submission view returns to the Post Detail page without clearing the form request. As a result if the user hits refresh the form will be resubmitted and the same comment will be created again. This is a future fix.
 
 ## <u>Technologies Used</u>
 

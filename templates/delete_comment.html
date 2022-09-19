@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="delete-comment-text">Delete comment</h1>
+<br><br>
+<div class="form-group delete-confirmation-text">
+    <form method="POST">
+        {% csrf_token %}
+        <strong>Are you sure?</strong>
+        <br><br>
+        <button class="btn btn-secondary">Delete</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("homelink").classList.add("link-active");
+</script>
+{%endblock%}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="edit-comment-text">Edit comment</h1>
+<br><br>
+<div class="container">
+<div class="row">
+<div class="col-md-4 card mb-4  mt-3 ">
+    <div class="card-body blog-comment-text-color valign-top">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-secondary">Update</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<script>
+    document.getElementById("homelink").classList.add("link-active");
+</script>
+{%endblock%}

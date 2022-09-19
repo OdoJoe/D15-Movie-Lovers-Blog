@@ -68,7 +68,7 @@
     </div>
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
+            <h3 class="comment-header-text">Comments:</h3>
             <div class="card-body blog-comment-text">
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
@@ -78,7 +78,20 @@
                             {{ comment.created_on }}
                         </span> wrote:
                     </p>
+                    {% if comment.approved %}
                     {{ comment.body | linebreaks }}
+                    <br>
+                    {% if user.is_authenticated %}
+                    {% if user.username == comment.name %}
+                    <a href="{% url 'update_comment' comment.pk %}">Edit comment</a> | 
+                    <a href="{% url 'delete_comment' comment.pk %}">Delete comment</a>
+                    {% endif %}
+                    {% endif %}
+                    {% else %}
+                    <em>This comment is under review by a moderator</em>
+                    {% endif %}
+                    <br>
+                   
                 </div>
                 {% endfor %}
             </div>
@@ -86,20 +99,7 @@
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body blog-comment-text-color">
 
-                {{ comment.approved }}<br>
-                {% if commented %}
-                    <p class="approval">This comment is awaiting approval</p>
-                    <h3>Edit your comment(max 1000 chars):</h3>
-                    <p>Posting as: {{ user.username }}</p>
-                    <form class="d-inline" action="" method="POST">
-                        <input type="hidden" value="{{ comment.slug }}">
-                        {{ comment_form | crispy }}
-                        {% csrf_token %}
-                        
-                        <button id="editButton" type="submit" class="btn btn-signup btn-lg">Edit</button>
-                        <br>{{ validation_message }}
-                    </form>
-                {% else %}
+               
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment(max 1000 chars):</h3>
@@ -113,7 +113,7 @@
                 {% else %}
                 <h3>Log in to leave a comment</h3>
                 {% endif %}
-                {% endif %}
+                
             </div>
         </div>
     </div>
