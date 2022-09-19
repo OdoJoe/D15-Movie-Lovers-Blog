@@ -105,9 +105,18 @@ The blog is designed to represent the blog if it were clicked into from the main
 
 * I note the overall design may be considered too simple when compared to more contempory blog/club sites. My goal is to improve the design by incorporating a new club logo and refreshing the overall style.
 
+## <u>Testing</u>
+* Goal
+* Action
+* Expected Outcome
+* Actual Outcome
+* Test passed
+
 ## <u>Known Bugs</u>
 
 * The create comment submission view returns to the Post Detail page without clearing the form request. As a result if the user hits refresh the form will be resubmitted and the same comment will be created again. This is a future fix.
+
+* The comment image populates a cut off portion of the main post image. This is noted for a future change.
 
 ## <u>Technologies Used</u>
 
