@@ -58,8 +58,6 @@ The blog is designed to represent the blog if it were clicked into from the main
 - PLACEHOLDER FOR SCREENSHOTS
 * A total of 4 Blog Posts will be shown before pagination moves further Blog Posts to a new page
 - PLACEHOLDER FOR SCREENSHOTS
-* User is notified that their comment is submitted for authorisation
-- PLACEHOLDER FOR SCREENSHOTS
 * Once the comment has been submitted the User also has the option to edit the comment or delete the comment
 - PLACEHOLDER FOR SCREENSHOTS
 
@@ -78,13 +76,17 @@ The blog is designed to represent the blog if it were clicked into from the main
 
 * As previously noted the original scope of the project included a Polling option to allow users to poll/vote on next months director focus and to vote on the current directors best film. This option will bring more interactivity to the user base increasing engagement and fostering an atmosphere of unity among the club members. I planned to write two simple poll option boxes to the right of the Blog posts on the Home Page. The top box would contain a list of 4 potential directors to vote on for the upcoming director focus in which users will click the directors name and the count for that director would increase by that vote. The second box, placed underneath the first, will contain a list of the current directors movies allowng users to vote on their favourite film and that count would increase by one. At the end of each month a follow up blog would be created to discuss the polling/vote results and hopefully garner engagement among the members in the comments.
 
-* The eventual goal for this project is to merge it with my portfolio project 1 and portfolio project 2 and create a viable club site with interactivity to promote engagement through the D15 MOvile Lovers Quiz(PP2) and through the Blog posts, comments and polling from this project.
+* The eventual goal for this project is to merge it with my portfolio project 1 and portfolio project 2 and create a viable club site with interactivity to promote engagement through the D15 Movie Lovers Quiz(PP2) and through the Blog posts, comments and polling from this project.
 
 * I also plan to develop a club logo and replace the rudimentary D15 Movie Lovers heading on each of the PP1, PP2 and PP4 projects.
 
-* Future ambitions include adding a link to a physical media store in which users can purchase Blu Ray, DVD or 4k UHD blu Rays of their favourite movies, discounted using the club profile. ALso an option to add soundtracks, T-Shirts and other collectible, movie focused memorabilia
+* Future ambitions include adding a link to a physical media store in which users can purchase Blu Ray, DVD or 4k UHD blu Rays of their favourite movies, potential discounting using the club profile. Also an option to add soundtracks, T-Shirts and other collectible, movie focused memorabilia.
 
-* I plan to have the comment edits return the user to the original comment instead of back to the home page
+* I plan to have the comment edits return the user to the original comment instead of back to the home page.
+
+* I want to make the blog posts accessible when th euser clicks the movie poster aswell as the blog title.
+
+* The only blog entry to contain an original blog post written by me is the blog entry titled 'Why Jaws the Revenge is better than you think'. The other Blog entries contain copy and pasted Wikipedia entries used solely due to time constraints. I will write personal blog entries for these posts that touch on my own feelings about the individual subjects which will generate talking points for the club members in the comments section. However, should you have the time to read the Jaws the Revenge blog, I hope you give it a rewatch.
 
 
 ## <u>Wireframes</u>
@@ -97,7 +99,7 @@ The blog is designed to represent the blog if it were clicked into from the main
 
 ## <u>Design</u>
 
-* The design focused on maintaining the look and feel of the previous D15 Movie Lover projects (PP1 and PP2) using the same header, footer and body colours. The colour scheme, as per the previous D15 Movie Lovers projects is used to generate an emotional response to the typical muted colours associated with visiting the cinema or those nostalgic trips to the video store, walking the aisles to find your next rental, etc. The overall design is very simple to keep the screen minimalist and decluttered.
+* The design focused on maintaining the look and feel of the previous D15 Movie Lovers projects (PP1 and PP2) using the same header, footer and body colours. The colour scheme, as per the previous D15 Movie Lovers projects is used to generate an emotional response to the typical muted colours associated with visiting the cinema or those nostalgic trips to the video store, walking the aisles to find your next rental, etc. The overall design is very simple to keep the screen minimalist and decluttered.
 
 * A default image related to cinema was used as a fallback
 
@@ -116,7 +118,7 @@ The blog is designed to represent the blog if it were clicked into from the main
 
 * The create comment submission view returns to the Post Detail page without clearing the form request. As a result if the user hits refresh the form will be resubmitted and the same comment will be created again. This is a future fix.
 
-* The comment image populates a cut off portion of the main post image. This is noted for a future change.
+* The comment image populates a cut off portion of the main post image. This will be redesigned in a future update to display a more complete image.
 
 ## <u>Technologies Used</u>
 
@@ -140,4 +142,4 @@ The blog is designed to represent the blog if it were clicked into from the main
 * PEP8 validation
 
 ## <u>Credits</u>
-* I heavily relied on the course content walkthrough project for the Code Star blog presented by Matt Rudge. The entire project was built using the guidance of Matts course content in particular the bootsrap application to make the site responsive. My sincere thanks to Matt and his content as without it I dont think I would've completed this project.
+* I heavily relied on the course content walkthrough project for the Code Star blog presented by Matt Rudge. The entire project was built using the guidance of Matts course content in particular the bootsrap application and some CSS to make the site responsive. My sincere thanks to Matt and his content as without it I dont think I would've completed this project.
