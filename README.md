@@ -1,6 +1,6 @@
 # D15 Movie Lovers Club Blog
 
-## Placeholder for responsive design example on differing screen types
+![Responsive design image](documentation/feature_screenshots/responsive-design.png)
 
 # Strategy
 
