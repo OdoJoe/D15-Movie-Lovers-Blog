@@ -16,6 +16,10 @@
 * I wanted Users to register, log in and log out in a simple manner while being able to write a Blog, comment on a blog and edit and delete their own comments.
 * Adding a blog to the D15 movile Lovers Club is a powerful way to maintain engagement with the club and foster unity with the club members, club officials and the club presence online
 
+## <u>Models</u>
+* I used the two main models from the course content Codestar walkthrough project and added a third model the CommentValidator model.
+![Models screenshot](documentation/model_schema/models-pp4.png)
+
 ## <u>User Stories</u>
 1. As an admin of the D15 Movie Lovers Club Blog I can approve or disapprove comments giving the admin the ability to disapprove questionable content
 
@@ -49,17 +53,58 @@ The blog is designed to represent the blog if it were clicked into from the main
 ## <u>Features</u>
 
 * Each navigational button on the Nav Bar highlights when hovered on
-- PLACEHOLDER FOR SCREENSHOTS
+
+![nav bar highlight](documentation/feature_screenshots/underline-hover-on-nav-options.png)
+
 * The selected page will maintain the highlighted bar to inform the user
-- PLACEHOLDER FOR SCREENSHOTS
-* Navbar reduces to burger button to accomadate smaller screen sizes
-- PLACEHOLDER FOR SCREENSHOTS
+
+![nav bar selection remains underlined](documentation/feature_screenshots/nav-selection-underline-to-display-current-page.png)
+
+* Navbar reduces to burger button to accomodate smaller screen sizes
+
+![nav bar burger](documentation/feature_screenshots/burger-responsive.png)
+
 * Footer in place with links to social media
-- PLACEHOLDER FOR SCREENSHOTS
+
+![footer and social links](documentation/feature_screenshots/s-media-links.png)
+
 * A total of 4 Blog Posts will be shown before pagination moves further Blog Posts to a new page
-- PLACEHOLDER FOR SCREENSHOTS
+
+![pagination](documentation/feature_screenshots/pagination-option.png)
+
 * Once the comment has been submitted the User also has the option to edit the comment or delete the comment
-- PLACEHOLDER FOR SCREENSHOTS
+
+![nav bar highlight](documentation/feature_screenshots/edit-delete-option.png)
+
+* The time of post and the number of likes wil display under each post
+
+![time of post and number of likes](documentation/feature_screenshots/time-of-post-like-count.png)
+
+* The user log in will be displayed in the top right of the page until they log out
+
+![user log in display](documentation/feature_screenshots/user-login-display.png)
+
+* A notification will display showing users they have logged in or logged out
+
+![log in, log out display](documentation/feature_screenshots/sign-in-notification.png)
+![log in, log out display](documentation/feature_screenshots/sign-out-notification.png)
+
+* A user friendly sign in form was used to make the user experience when signing in as simple as possible
+
+![simple sign in form](documentation/feature_screenshots/sign-in.png)
+
+* A user friendly registration form was used to make the user experience when registering as simple as possible
+
+![simple registration form](documentation/feature_screenshots/registration-form.png)
+
+* The author of the post will be displayed on the post itself
+
+![post author displayed on post](documentation/feature_screenshots/post-author.png)
+
+* The logout option displays for the user once they are successfully logged in
+
+![log out option is displayed once a user logs in](documentation/feature_screenshots/logout-option-when-logged-in.png)
+
 
 ## <u>Blog Posts</u>
 
@@ -87,6 +132,8 @@ The blog is designed to represent the blog if it were clicked into from the main
 * I want to make the blog posts accessible when th euser clicks the movie poster aswell as the blog title.
 
 * The only blog entry to contain an original blog post written by me is the blog entry titled 'Why Jaws the Revenge is better than you think'. The other Blog entries contain copy and pasted Wikipedia entries used solely due to time constraints. I will write personal blog entries for these posts that touch on my own feelings about the individual subjects which will generate talking points for the club members in the comments section. However, should you have the time to read the Jaws the Revenge blog, I hope you give it a rewatch.
+
+* The about page will be styled more appropriately and will include a club picture/logo. As the page stands now was simply due to time constraints.
 
 
 ## <u>Wireframes</u>
