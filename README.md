@@ -135,14 +135,83 @@ The blog is designed to represent the blog if it were clicked into from the main
 
 * The about page will be styled more appropriately and will include a club picture/logo. As the page stands now was simply due to time constraints.
 
+* The empty pace to the right of the home page will be used to display the voting options as previously noted
+
 
 ## <u>Wireframes</u>
 
-- PLACEHOLDER FOR SCREENSHOTS
 
-## <u>Data Models</u>
+* Home page desktop:
 
-- PLACEHOLDER FOR SCREENSHOTS
+![Home page desktop](documentation/wireframes/homepage-desktop.png)
+
+* Login page desktop:
+
+![Login page desktop](documentation/wireframes/loginpage-desktop.png)
+
+* Register page desktop:
+
+![Register page desktop](documentation/wireframes/registerpage-desktop.png)
+
+* About page desktop:
+
+![About page desktop](documentation/wireframes/aboutpage-desktop.png)
+
+* Home page tablet:
+
+![Home page tablet](documentation/wireframes/homepage-tablet.png)
+
+* Login page tablet
+
+![Login page tablet](documentation/wireframes/loginpage-tablet.png)
+
+* Register page tablet:
+
+![Register page tablet](documentation/wireframes/registerpage-tablet.png)
+
+* About page tablet:
+
+![About page tablet](documentation/wireframes/aboutpage-tablet.png)
+
+* Home page mobile:
+
+![Home page mobile](documentation/wireframes/homepage-mobile.png)
+
+* Login page mobile:
+
+![Login page mobile](documentation/wireframes/loginpage-mobile.png)
+
+* Register page mobile:
+
+![Register page mobile](documentation/wireframes/registerpage-mobile.png)
+
+* About page mobile:
+
+![About page mobile](documentation/wireframes/aboutpage-mobile.png)
+
+* Blog post page desktop:
+
+![Blog post page desktop](documentation/wireframes/blogpost-desktop.png)
+
+* Blog post page tablet:
+
+![Blog post page tablet](documentation/wireframes/blogpost-tablet.png)
+
+* Blog post page mobile:
+
+![Blog post page mobile](documentation/wireframes/blogpost-mobile.png)
+
+## <u>Differences between the Wireframes and finished blog</u>
+
+* The poll option and vote option were not completed due to time constraints and have been noted for future implementation.
+
+* The login and register pages were simplified. Instead on incasing the forms in a container I left them fee on the page. The view is elegant and simple.
+
+* The club logo as seen on the About page is not yet designed. This has been noted for future implementation.
+
+* I intended that a smaller blog appropriate image would display with the full blog post however a cropped portion now displays. This has been noted for a future fix.
+
+* I planned to display a blog appropriate image on the mobile screen. However the responsive design works well in its current state sans image.
 
 ## <u>Design</u>
 
