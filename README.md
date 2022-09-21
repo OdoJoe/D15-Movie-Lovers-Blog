@@ -230,6 +230,16 @@ The blog is designed to represent the blog if it were clicked into from the main
 * Actual Outcome
 * Test passed
 
+# <u>Lighthouse Test</u>
+
+* Lighthouse test desktop:
+
+![Lighthouse test desktop](documentation/lighthouse_test/lighthouse-desktop-score.png)
+
+* Lighthouse test mobile:
+
+![Lighthouse test desktop](documentation/lighthouse_test/lighthouse-mobile-score.png)
+
 ## <u>Known Bugs</u>
 
 * The create comment submission view returns to the Post Detail page without clearing the form request. As a result if the user hits refresh the form will be resubmitted and the same comment will be created again. This is a future fix.
@@ -258,4 +268,4 @@ The blog is designed to represent the blog if it were clicked into from the main
 * PEP8 validation
 
 ## <u>Credits</u>
-* I heavily relied on the course content walkthrough project for the Code Star blog presented by Matt Rudge. The entire project was built using the guidance of Matts course content in particular the bootsrap application and some CSS to make the site responsive. My sincere thanks to Matt and his content as without it I dont think I would've completed this project.
+* I heavily relied on the course content walkthrough project for the Code Star blog presented by Matt Rudge. The entire project was built using the guidance of Matts course content in particular the bootsrap application and some CSS which I used from the walkthrough to help make the site responsive. My sincere thanks to Matt and his content as without it I dont think I would've completed this project.
