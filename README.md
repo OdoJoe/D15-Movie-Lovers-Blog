@@ -479,6 +479,50 @@ The blog is designed to represent the blog if it were clicked into from the main
 * Pylint python Validation
 * Javascript
 
+## <u>Heroku</u>
+
+* Project started in Github and launched in Gitpod
+
+## <u>Deployment</u>
+1. As advised in the course walkthrough, I deployed my skeleton project to heroku early to deal with any issues at the beginning.
+
+2. I created a heroku profile and submitted a request to use Postgres linking my project to heroku
+
+3. I copied the Postgres link to my config vars
+
+4. In the Heroku Settings tab I clicked on "Reveal Config Vars". I copied the automatically-added postgres link from beside the DATABASE_URL variable.
+
+5. I put this value into env.py in a database url setting.
+
+6. I added the SECRET_KEY into the env.py file after having it generated on the Django Secret Key Generator.
+
+7. I added the secret key into the Heroku Settings > config vars.
+
+8. In the settings.py file I imported os and added an if statement noting that outside the development environment the environment variables must be used from env.py, including the secret key.
+
+9. In settings.py file, I deleted the present code for databases and added code to use the currently set up django database URL as set in the env.py file and also in the Heroku config vars.
+
+10. I migrated these changes in Gitpod using python3 manage.py migrate.
+
+11. To set up Cloudinary, I copied the API Environment Variable from my cloudinary profile.
+
+12. I added this to env.py and into the Heroku Settings > config vars.
+
+13. I also added DISABLE_COLLECTATIC = 1 to the Heroku config vars for debug only. Before final deployment I removed this setting from heroku.
+
+14. cloudinary and cloudinary_storage were added to the installed apps in settings.py.
+
+15. I created 3 directories: Media, Static and Templates as well as the procfile.
+
+16. The skeleton project ran successfully on heroku.
+
+17. I removed DISABLE_COLLECTSTATIC and set debug to false for final deployment.
+
+18. Deployed to heroku.
+
+19. Completed final tests on deployed page.
+
+
 ## <u>Credits</u>
 * I heavily relied on the course content walkthrough project for the Code Star blog presented by Matt Rudge. The entire project was built using the guidance of Matt's course content in particular the boostrap application and some CSS which I used from the walkthrough to help make the site responsive. My sincere thanks to Matt and his content as without it I don't think I would've completed this project.
 
