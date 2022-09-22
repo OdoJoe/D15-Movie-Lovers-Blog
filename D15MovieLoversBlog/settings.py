@@ -32,6 +32,8 @@ SECRET_KEY = os.environ.get
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 ALLOWED_HOSTS = ['d15-movie-lovers-blog.herokuapp.com', 'localhost']
 
 
