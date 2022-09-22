@@ -2,6 +2,8 @@
 
 ![Responsive design image](documentation/feature_screenshots/responsive-design.png)
 
+View live site here: https://d15-movie-lovers-blog.herokuapp.com/
+
 # Strategy
 
 ## <u>Agile</u>
