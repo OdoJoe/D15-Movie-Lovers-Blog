@@ -11,9 +11,9 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in post.post_image.url %}
-                <img src="https://res.cloudinary.com/dkuvdfsgf/image/upload/v1663523396/d15movieloversblogplaceholder_jypw7x.jpg" width="100%">
+                <img alt="D15 Movie Lovers Club" src="https://res.cloudinary.com/dkuvdfsgf/image/upload/v1663523396/d15movieloversblogplaceholder_jypw7x.jpg">
                 {% else %}
-                <img src=" {{ post.post_image.url }}" width="100%">
+                <img src=" {{ post.post_image.url }}" alt="{{ post.title }}">
                 {% endif %}
             </div>
         </div>
@@ -30,7 +30,6 @@
                 <div class="row">
 
                     <div class="col-1">
-                        <strong>
                             {% if user.is_authenticated %}
                             <form action="{% url 'post_like' post.slug %}" method="POST" class="d-inline">
                                 {% csrf_token %}
@@ -49,7 +48,6 @@
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ post.number_of_likes }} </span>
-                        </strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}

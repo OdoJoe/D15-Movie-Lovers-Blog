@@ -1,3 +1,8 @@
+"""
+models/classes are
+defined here
+"""
+
 from django.shortcuts import reverse
 from django.db import models
 from django.contrib.auth.models import User
@@ -30,7 +35,7 @@ class Post(models.Model):
         ordering = ['-post_create_date']
 
     def __str__(self):
-        return self.title
+        return str(self.title)
 
     def number_of_likes(self):
         """
@@ -59,9 +64,16 @@ class Comment(models.Model):
         ordering = ['created_on']
 
     def __str__(self):
+        """
+        return this object in
+        string form
+        """
         return f"comment {self.body} by {self.name}"
 
     def get_absolute_url(self):
+        """
+        return absolute url
+        """
         return reverse('home')
 
 
@@ -71,9 +83,11 @@ class CommentValidator():
     characters in each comment
     """
     def validate(self, text):
+        """
+        validates the text entered
+        """
 
         if len(text) > 1000:
             return 'Your comment is too long.'
         else:
             return ''
-
